@@ -217,9 +217,6 @@ the hardware and software configurations of the test environment
 	IDE: Visual Studio code
 ```
 
-## Author
-
-Mingkun Li  
 
 
 
