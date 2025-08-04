@@ -201,6 +201,22 @@ The generated dataset has the following structure:
 - Custom modulation functions (AFDM_modulation, OTFS_modulation, GFDM_Coder)
 - Channel estimation and modulation libraries in the `+Channel` and `+Modulation` folders
 
+## Dataset Division
+It is recommended to split the dataset in a 7:1:2 ratio. The generated file MWR_all_AMC.mat contains 20 SNR levels, 8 classes, and 2000 samples per class per SNR, resulting in a total of 320,000 samples. Among them, 70% are used for training, yielding 224,000 training samples. 20% are used for testing, resulting in 64,000 test samples.
+
+## Simulation env of paper
+the hardware and software configurations of the test environment
+```
+	Cuda device count:  1
+	Cuda device:  NVIDIA GeForce RTX 4070 Laptop GPU
+	Torch version:  2.4.1+cu124
+	Cuda version:  12.4
+	Cudnn version:  90100
+	System：Windows11
+	Programming language：Python3.12.7
+	IDE: Visual Studio code
+```
+
 ## Author
 
 Mingkun Li  
