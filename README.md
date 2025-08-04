@@ -41,7 +41,7 @@ This repository contains MATLAB scripts for generating Multi-Carrier Modulation 
 
 | Aspect | `gen_MWR_dataset.m` | `gen_MWR_dataset_difmod.m` |
 |--------|---------------------|----------------------------|
-| **SNR Range** | -18:2:20 dB (20 SNR levels) | -18:2:-16 dB (3 SNR levels) |
+| **SNR Range** | -18:2:20 dB (20 SNR levels) | -18:2:20 dB (20 SNR levels) |
 | **Monte Carlo Repetitions** | 2000 | 1800 |
 | **Subcarrier Modulation** | Fixed QPSK (4-QAM) | Multiple: QPSK, 16QAM, 64QAM |
 | **Modulation Distribution** | Equal across all modulations | 600 samples per subcarrier modulation |
@@ -62,7 +62,7 @@ This repository contains MATLAB scripts for generating Multi-Carrier Modulation 
 
 | Parameter | `gen_MWR_dataset.m` | `gen_MWR_dataset_difmod.m` | Description |
 |-----------|---------------------|----------------------------|-------------|
-| `Simulation_SNR_OFDM_dB` | -18:2:20 | -18:2:-16 | SNR range in dB |
+| `Simulation_SNR_OFDM_dB` | -18:2:20 | -18:2:20 | SNR range in dB |
 | `Simulation_MonteCarloRepetitions` | 2000 | 1800 | Number of Monte Carlo iterations |
 | `snr_num` | 20 | 3 | Number of SNR levels |
 | `subcarrier_mod_order` | N/A | [4,16,64] | Subcarrier modulation orders |

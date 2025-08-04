@@ -19,7 +19,7 @@ fs = SamplingRate;  % Sampling rate
 dt                          = 1/SamplingRate;
 
 % Simulation parameters
-Simulation_SNR_OFDM_dB            = -18:2:-16;                          % SNR for OFDM in dB. The average transmit power of all methods is the same! However, the SNR might be different due to filtering (in FOFDM and UFMC) or because a different bandwidth is used (different subcarrier spacing or different number of subcarriers).
+Simulation_SNR_OFDM_dB            = -18:2:20;                          % SNR for OFDM in dB. The average transmit power of all methods is the same! However, the SNR might be different due to filtering (in FOFDM and UFMC) or because a different bandwidth is used (different subcarrier spacing or different number of subcarriers).
 Simulation_MonteCarloRepetitions  = 1800;                                % Number of Monte Carlo repetitions over which we take the average                  
 Simulation_PlotSignalPowerTheory  = true;                               % If true, plot also the expected transmit power over time (theory)
 snr_num  = length(Simulation_SNR_OFDM_dB);
